@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Barkr - Dog Dating</title>
 </head>
 <body>
     <h1>Welcome to puppy love!</h1>
     <p>Your dog’s perfect match is waiting 🐶💖</p>
-    <img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Cute dog">
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Dog 1">
+        <img src="{{ url_for('static', filename='images/img2.webp') }}" alt="Dog 2">
+    </div>
+    
 </body>
 </html>
