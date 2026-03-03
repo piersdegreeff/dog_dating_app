@@ -23,3 +23,26 @@ body {
     background-color: coral;
 
 }
+
+.dog-name {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.dog-bio {
+    color: white;
+    font-size: 10px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.dog-card {
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+    width: 200px;
+    align-items: center;
+}
