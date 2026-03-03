@@ -1,6 +1,7 @@
 .image-container {
     display: flex;
     gap: 20px;
+    
 }
 
 img {
@@ -8,8 +9,17 @@ img {
 }
 
 h1 {
-    color: black;
+    color: white;
     text-align: center;
-    font-size: 30px;
-    
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: coral;
+
 }
