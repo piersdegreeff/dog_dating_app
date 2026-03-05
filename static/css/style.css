@@ -1,9 +1,3 @@
-.image-container {
-    display: flex;
-    gap: 20px;
-    
-}
-
 img {
     width: 200px;
 }
@@ -21,7 +15,6 @@ p {
 
 body {
     background-color: coral;
-
 }
 
 .dog-name {
@@ -41,11 +34,17 @@ body {
     background-color: black;
     padding: 10px;
     border-radius: 30px;
-    width: 300px;
+    min-width: 250px;
+    max-width: 250px;
     height: 300px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }

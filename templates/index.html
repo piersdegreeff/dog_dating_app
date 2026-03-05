@@ -8,17 +8,29 @@
     <h1>Welcome to Puppy Love!</h1>
     <p>Find your dog a date!</p>
     <p>Swipe right to like and left to pass.</p>
-    <div class="dog-card">
-        <img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Cosmo">
-        <p class="dog-name">Cosmo</p>
-        <p class="dog-bio">Loves to go for walks and chase squirreles.</p>
-       
-    </div>
 
-    <div class="image-container">
-        <img src="{{ url_for('static', filename='images/img2.webp') }}" alt="Dog 2">
+
+    <div class="card-container">
+        <div class="dog-card" id="cosmo">
+            <img src="{{ url_for('static', filename='images/img1.webp') }}" alt="Cosmo">
+            <p class="dog-name">Cosmo</p>
+            <p class="dog-bio">Loves to go for walks and chase squirreles.</p>
+        </div>
+        <div class="dog-card" id="roofus" style="display: none;">
+            <img src="{{ url_for('static', filename='images/img2.webp') }}" alt="Roofus">
+            <p class="dog-name">Roofus</p>
+            <p class="dog-bio">Roofus loves peanut butter and chasing a tennis ball.</p>
+        </div>
     </div>
     
+    <button onclick="showNext()">Next Dog ➡️</button>
+
+    <script>
+        function showNext(){
+            document.getElementById("cosmo").style.display = "none";
+            document.getElementById("roofus").style.display = "block";
+        }
+    </script>
 </body>
 </html>
 
