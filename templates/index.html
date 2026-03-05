@@ -22,13 +22,23 @@
             <p class="dog-bio">Roofus loves peanut butter and chasing a tennis ball.</p>
         </div>
     </div>
-    
+
     <button onclick="showNext()">Next Dog ➡️</button>
 
+
     <script>
+        let cards = document.getElementsByClassName("dog-card");
+        let currentDog = 0;
+
         function showNext(){
-            document.getElementById("cosmo").style.display = "none";
-            document.getElementById("roofus").style.display = "block";
+            
+            cards[currentDog].style.display = "none";
+            currentDog = currentDog + 1;
+
+            if (currentDog >= cards.length){
+                currentDog = 0;
+            }
+            cards[currentDog].style.display = "block"
         }
     </script>
 </body>
