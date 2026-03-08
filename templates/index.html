@@ -33,21 +33,7 @@
     <a href="/matches">My Matches</a>
 
 
-    <script>
-        let cards = document.getElementsByClassName("dog-card");
-        let currentDog = 0;
-
-        function showNext(){
-            
-            cards[currentDog].style.display = "none";
-            currentDog = currentDog + 1;
-
-            if (currentDog >= cards.length){
-                currentDog = 0;
-            }
-            cards[currentDog].style.display = "block"
-        }
-    </script>
+    <script src="{{ url_for('static', filename='js/script.js')}}">  </script>
 </body>
 </html>
 
